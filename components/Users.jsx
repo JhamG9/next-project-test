@@ -1,14 +1,14 @@
 "use client"
 
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Users = () => {
 
-    useEffect(() => {
-    }, [])
-    
   return (
-    <div>Users</div>
+    <div>
+      <h1>UIser</h1>
+      <button onClick={() => alert("Hello")}>Hello</button>
+    </div>
   )
 }
 
