@@ -7,6 +7,7 @@ export const metadata = {
   description: "Esta es la pagina principal de mi Tienda",
   keywords: "tienda, online, ecommerce",
 };
+import "./globals.css";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
