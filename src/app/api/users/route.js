@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 // ROUTE HANDLER
 export async function GET() {
     // Hacer mas funcinoes
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const res = await fetch("https://jsonplaceholder.typicode.com/users?apiKey="+process.env.TOKEN);
     const data = await res.json();
     return NextResponse.json(data);
 };
