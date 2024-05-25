@@ -9,7 +9,7 @@ export default function HomePage() {
     <section>
       <h1>Hello World</h1>
 
-      <Users />
+      <Users />|
     </section>
   );
 }
