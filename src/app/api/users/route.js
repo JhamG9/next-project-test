@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 
+// ROUTE HANDLER
 export async function GET() {
     // Hacer mas funcinoes
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -7,12 +8,13 @@ export async function GET() {
     return NextResponse.json(data);
 };
 
-export function POST() {
-    return NextResponse.json({
-        message: "Creando datos"
-    });
-}
 
+export async function POST(request){
+    // const requestBody = await request.json();
+    const {nombre, apellido} = await request.json();
+    console.log(nombre, apellido);
+    return NextResponse.json("Creando datos")
+}
 
 export function PUT() {
     // Hacer mas funcinoes
